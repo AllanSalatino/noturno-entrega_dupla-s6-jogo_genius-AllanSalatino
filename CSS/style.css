@@ -1,0 +1,256 @@
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(58, 58, 58);
+    height: 70vh;
+}
+/* Elementos no header */
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#verde, #amarelo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px
+}
+#quadradoVerde1, #quadradoVerde2, #quadradoVerde3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: black solid;
+    box-sizing: border-box;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-shadow: black 3px 3px;
+}
+#amarelo{
+    justify-content: end;
+}
+#quadradoAmarelo1, #quadradoAmarelo2, #quadradoAmarelo3{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: black solid;
+    box-sizing: border-box;
+}
+
+
+/*Elementos no footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+#vermelho, #azul{
+    display: flex;
+}
+#quadradoVermelho1, #quadradoVermelho2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border: black solid;
+    box-sizing: border-box;
+}
+
+#quadradoAzul1, #quadradoAzul2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 0, 255);
+    border: black solid;
+    box-sizing: border-box;
+}
+
+
+/* Elementos no main */
+#container{
+    position: static;
+    width: 100%;
+    height: 70.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_game{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: radial-gradient(rgb(87, 87, 87), rgb(0, 0, 0) );
+    border-radius: 100%;
+    border: rgba(17, 17, 17, 0.301) 10px solid;
+}
+
+#bt_verde{
+    background-image: radial-gradient( rgb(0, 255, 0), rgb(33, 150, 3));
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 500px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgb(1, 110, 1) 3px 3px ;
+    cursor: pointer;
+    margin-bottom: -5px;
+}
+#bt_verde:hover{
+    background-image: radial-gradient( rgb(195, 255, 195), rgb(119, 255, 85));
+}
+#bt_verde.ativo{
+    background-image: radial-gradient(rgb(185, 255, 185), rgb(175, 255, 175));
+}
+
+
+#bt_amarelo{
+    background-image: radial-gradient( rgb(229, 255, 0), rgb(179, 176, 0));
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: -15px;
+    box-shadow: rgb(163, 147, 2) 3px 3px;
+    cursor: pointer;
+    margin-bottom: -5px;
+}
+#bt_amarelo:hover{
+    background-image: radial-gradient( rgb(251, 255, 195), rgb(255, 238, 85));
+}
+#bt_amarelo.ativo{
+    background-image: radial-gradient( rgb(242, 255, 128), rgb(255, 254, 224));
+}
+
+
+#bt_vermelho{
+    background-image: radial-gradient(#ff3434, rgb(138, 2, 2));
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 500px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: rgb(151, 10, 10) 3px 3px 3px ;
+    cursor: pointer;
+    margin-top: -5px;
+}
+#bt_vermelho:hover{
+    background-image: radial-gradient( rgb(255, 195, 195), rgb(255, 85, 85));
+}
+#bt_vermelho.ativo{
+    background-image: radial-gradient(rgb(255, 146, 146), rgb(255, 97, 97));
+}
+
+
+#bt_azul{
+    background-image: radial-gradient( rgb(34, 4, 165), rgb(2, 36, 146));
+    width: 100px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 500px;
+    margin-left: -15px;
+    box-shadow: rgb(11, 2, 141) 3px 3px ;
+    cursor: pointer;
+    margin-top: -5px;
+}
+#bt_azul:hover{
+    background-image: radial-gradient( rgb(195, 209, 255), rgb(88, 85, 255));
+}
+#bt_azul.ativo{
+    background-image: radial-gradient( rgb(89, 52, 255),rgb(167, 188, 255));
+}
+
+
+#borda_bt_start{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 100px;
+    position: fixed;
+}
+#bt_start{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(white, rgb(180, 180, 180));
+    border-radius: 100px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: rgb(28, 211, 28);
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    box-shadow: rgb(175, 175, 175) 1px 2px 2px;
+    cursor: pointer;
+}
+#bt_start:hover{
+    background-image: radial-gradient(rgb(135, 255, 98), rgb(48, 206, 0));
+    color: aliceblue;
+    box-shadow: rgb(14, 121, 0) 1px 2px 2px;
+}
+
+
+/* lementos no aside turno */
+.aside_turno{
+    position: fixed;
+    top: 200px;
+    left: 250px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#turno{
+    font-size: 40px;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-shadow: black 3px 3px 3px;
+}
+#pcOuUsuario{
+    font-size: 35px;
+    color: white;
+    margin: 0px;
+    text-shadow: black 3px 3px 3px;
+    width: 115px;
+}
+
+
+/* lementos no aside rounds */
+.aside_rounds{
+    position: fixed;
+    top: 200px;
+    right: 250px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#round{
+    font-size: 40px;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-shadow: black 3px 3px 3px;
+}
+#contador{
+    font-size: 45px;
+    color: white;
+    margin: 0px;
+    text-shadow: black 3px 3px 3px;
+}
