@@ -1,3 +1,5 @@
+Site vercel https://noturno-entrega-dupla-s6-jogo-genius-allan-salatino.vercel.app/
+
 # Entrega: Jogo GENIUS
 
 ## Introdução
